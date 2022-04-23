@@ -35,7 +35,7 @@
 
 - Using the SQL below, we created a table for employees who are eligible for mentorship.
 
-'''
+```
 SELECT DISTINCT ON (e.emp_no) e.emp_no, e.first_name, e.last_name, e.birth_date, de.from_date, de.to_date, t.title
 INTO mentorship_eligibility
 FROM employees as e
@@ -46,7 +46,7 @@ FROM employees as e
 WHERE (t.to_date = '9999-01-01')
 AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 ORDER BY e.emp_no ASC;
-'''
+```
 
 - Using the count keyword for SQL, we determined that there are only 1549 employees who are eligible for mentorship.
 
