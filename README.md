@@ -50,10 +50,10 @@ ORDER BY e.emp_no ASC;
 
 - Using the count keyword for SQL, we determined that there are only 1549 employees who are eligible for mentorship.
 
-'''
+```
 SELECT count(me.emp_no)
 FROM mentorship_eligibility as me;
-'''
+```
 
 ![mentorship_eligibility_count](/Resources/mentorship_eligibility_count.PNG)
 
